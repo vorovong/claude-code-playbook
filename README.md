@@ -174,19 +174,44 @@ irm https://claude.ai/install.ps1 | iex
 
 ---
 
-### 4단계: 플레이북 다운로드 + 클로드 코드 실행
+### 4단계: 내 플레이북 만들기
 
-마지막 단계다. 아래를 통째로 복사해서 붙여넣고 `Enter`:
+이 단계에서 플레이북을 **내 GitHub 계정에 복사**한다. 내 계정에 있어야 진행 기록을 저장할 수 있다.
+
+**4-1. GitHub 계정이 없으면 먼저 만들기**
+
+1. [github.com](https://github.com) 에 접속
+2. **"Sign up"** 클릭
+3. 이메일, 비밀번호, 사용자 이름(아이디)을 입력
+   - 사용자 이름은 영문으로, 기억하기 쉬운 걸로 하세요 (예: `hong-gildong`)
+4. 이메일 인증을 완료
+
+**4-2. 플레이북 복사하기**
+
+1. [claude-code-playbook](https://github.com/vorovong/claude-code-playbook) 페이지로 이동
+2. 오른쪽 위의 초록색 **"Use this template"** 버튼 클릭
+3. **"Create a new repository"** 선택
+4. Repository name에 `claude-code-playbook` 입력 (다른 이름도 가능)
+5. **"Create repository"** 클릭
+
+이제 내 GitHub 계정에 플레이북이 복사되었다.
+
+**4-3. 다운로드 + 클로드 코드 실행**
+
+아래 명령어에서 `내아이디` 부분을 **본인의 GitHub 아이디**로 바꿔서 입력한다.
 
 **Mac의 경우:**
 ```
-git clone https://github.com/vorovong/claude-code-playbook.git ~/projects/claude-code-playbook && cd ~/projects/claude-code-playbook && claude
+git clone https://github.com/내아이디/claude-code-playbook.git ~/projects/claude-code-playbook && cd ~/projects/claude-code-playbook && claude
 ```
 
 **Windows의 경우:**
 ```
-git clone https://github.com/vorovong/claude-code-playbook.git "$HOME\projects\claude-code-playbook"; cd "$HOME\projects\claude-code-playbook"; claude
+git clone https://github.com/내아이디/claude-code-playbook.git "$HOME\projects\claude-code-playbook"; cd "$HOME\projects\claude-code-playbook"; claude
 ```
+
+> 예를 들어 GitHub 아이디가 `hong-gildong`이면:
+> `git clone https://github.com/hong-gildong/claude-code-playbook.git ...`
 
 - 파일이 다운로드되고, 자동으로 클로드 코드가 시작된다.
 
