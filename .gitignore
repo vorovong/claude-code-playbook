@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+.claude/settings.local.json
+node_modules/
+mini-projects/ai-news-hub/
+mini-projects/박승현/신도시-IR/node_modules/
+*.db
+*.db-shm
+*.db-wal
+package-lock.json
+.claude/hooks/.stop-lock
